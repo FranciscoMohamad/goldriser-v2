@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/goldriser.css">
+    <link rel="icon" href="../multimedia/goldriser-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,200&display=swap"
+        rel="stylesheet">
+    <title>Goldriser</title>
+</head>
+
+<body>
+
+    <div id="page">
+
+                        <!--HEADER-->
+        <header>
+            <img src="../multimedia/servicios_header.jpg" alt="logo de goldriser">
+        </header>
+
+                        <!--NAV DEL CEL CON BOOSTRAP-->
+
+        <nav class=" nav-cel navbar navbar-expand-lg bg-skin justify-content-start">
+            <div class="container-fluid justify-content-center">
+                <img class="nav-logo mt-3" src="../multimedia/goldriser-logo.png" alt="">
+                <button class="navbar-toggler  mt-5  mb-4 px-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse  text-center show" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item mt-2">
+                            <a class="nav-link" href="nuestros-valores.html">Valores</a>
+                        </li>
+                        <li class="nav-item mt-2">
+                            <a class="nav-link" href="consorcios.html">Consorcios</a>
+                        </li>
+                        <li class="nav-item mt-2">
+                            <a class="nav-link" href="servicios-estudio.html">Servicios</a>
+                        </li>
+                        <li class="nav-item mt-2 mb-4">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <img class=" nav-img" src="../multimedia/mohamad_logo.jpg" alt="logo de estudio mohamad">
+        </nav>
+
+                        <!--NAV DE PC CON FLEX-->
+
+        <nav class="nav-pc">
+            <ul>
+                <img src="../multimedia/mohamad_logo.jpg" alt="logo estudio mohamad">
+                <li>
+                    <a href="../index.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="nuestros-valores.html">Valores</a>
+                </li>
+                <li>
+                    <a href="consorcios.html">Consorcios</a>
+                </li>
+                <li>
+                    <a href="servicios-estudio.html">Servicios</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!--MAIN-->
+
+        <main class="main-cel">
+
+            <!--MAIN DE CEL-->
+
+            <h1>SERVICIOS</h1>
+            <div class="accordion  mt-5" id="accordionExample">
+                <div class="accordion-item bg-skin">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button px-5 bg-skin" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            ÁREA IMPOSITIVA
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Análisis y liquidación de impuestos nacionales, provinciales y municipales.</li>
+                                <li>Planificación fiscal de individuos y empresas.</li>
+                                <li>Defensas Impositivas ante inspecciones.</li>
+                                <li>Análisis y liquidación de anticipos, retenciones, etc.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-itemS bg-skin">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed px-5 bg-skin" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            ÁREA CONTABLE
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Confección de Estados Contables.</li>
+                                <li>Organización contable de entidades privadas, con o sin fines de lucro.</li>
+                                <li>Análisis y proyecciones de estados contables.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item bg-skin">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed px-5 bg-skin" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            ÁREA JUDICIAL
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                           <ul>
+                              <li>Asesoramiento en pericias contables</li>
+                              <li>Perito de parte y de oficio en fueros laboral, comercial y penal/correccional</li>
+                              <li>Asesoramiento en materia laboral, penal y administrativa</li>
+                           </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--MAIN DE PC-->
+
+            <div class="main-pc-servicios">
+                <h2>
+                    ÁREA IMPOSITIVA
+                </h2>
+                <ul>
+                    <li>Análisis y liquidación de impuestos nacionales, provinciales y municipales.</li>
+                    <li>Planificación fiscal de individuos y empresas.</li>
+                    <li>Defensas Impositivas ante inspecciones.</li>
+                    <li>Análisis y liquidación de anticipos, retenciones, etc.</li>
+                </ul>
+                <h2>
+                    ÁREA CONTABLE
+                </h2>
+                <ul>
+                    <li>Confección de Estados Contables.</li>
+                    <li>Organización contable de entidades privadas, con o sin fines de lucro.</li>
+                    <li>Análisis y proyecciones de estados contables.</li>
+                </ul>
+                <h2>
+                    ÁREA JUDICIAL
+                </h2>
+                <ul>
+                    <li>Asesoramiento en pericias contables</li>
+                    <li>Perito de parte y de oficio en fueros laboral, comercial y penal/correccional</li>
+                    <li>Asesoramiento en materia laboral, penal y administrativa</li>
+                </ul>
+            </div>
+
+        </main>
+
+        <aside>
+                <div class="aside-div1">
+                    <img class="img1" src="../multimedia/goldriser-logo.png" alt="logo goldriser">
+                </div>
+                <div class="aside-div2">
+                    <img class="img2" src="../multimedia/servicios-decoration.jpg" alt="empresario">
+                </div>
+        </aside>
+
+        <!--FOOTER-->
+
+        <footer>
+            <p>MOHAMAD Estudio Contable - Copyright 2010</p>
+            <p>Todos los Derechos Reservados</p>
+        </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
