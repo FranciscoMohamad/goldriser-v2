@@ -6,8 +6,7 @@
 }
            /*ESTILOS GENERALES*/
 html {
-    font-size: 62.5%;
-    color: #000;
+    font-size: 62.5%; 
     font-size: 1rem;
 }
 
@@ -15,8 +14,8 @@ html {
 body {
     min-height: 100vh;
     width: 100%;
-    background-image: url(../multimedia/fondo.jpg);
     font-family: 'Poppins', sans-serif;
+    color: #000;
 }
     /*COLORS*/
 
@@ -43,7 +42,6 @@ body {
 
 #page  header {
   grid-area: head;
-  border-bottom: 0.02rem solid #000;
   border-radius: 5px;
 }
 
@@ -97,6 +95,10 @@ nav ul li {
   display: inline-block;
 }
 
+nav ul li:hover {
+  background-color: #b4b19d;
+}
+
 .nav-img {
   height: 13rem;
   width: 7rem;
@@ -124,6 +126,8 @@ a {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-image: linear-gradient(#1a1919,#333131 20%);
+  box-shadow: 2rem black;
 }
 
 main h1 {
@@ -132,9 +136,14 @@ main h1 {
   font-family: 'Times New Roman', Times, serif;
   padding: 2px;
   border: 2px solid #000;
+  color: #000;
   border-radius: 7px;
   background-color: #E7E4CA;
   text-align: center;
+}
+
+.main-text{
+  color: #E7E4CA;
 }
 
 .accordion {
@@ -195,6 +204,10 @@ aside img {
   height: 10rem;
 }
 
+.aside-div2 {
+  color: #E7E4CA;
+}
+
     /*FOOTER*/
 
 footer {
@@ -232,6 +245,8 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    grid-area: nav;
+    background-image: linear-gradient(#1a1919,#333131 20%);
   }
 
   nav img {
@@ -262,14 +277,22 @@ footer {
     display: none;
   }
 
+
+  .main-cel {
+    background-image: linear-gradient(to top,#E7E4CA, #a8a695 95%);
+  }
+
   .main-pc {
     display: flex;
     flex-direction: column;
     align-items: start;
   }
-
   main h1 {
     margin: 2rem 0 2rem;
+  }
+
+  .main-text {
+    color: #000;
   }
 
 
@@ -285,6 +308,10 @@ footer {
 
   main div p {
     font-size: 1.2rem;
+  }
+
+  aside {
+    background-image: linear-gradient(#1a1919,#333131 20%);
   }
 
       /*MAIN CONSORCIOS*/
