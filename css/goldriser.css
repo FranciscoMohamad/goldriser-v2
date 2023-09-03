@@ -97,6 +97,8 @@ nav ul li {
 
 nav ul li:hover {
   background-color: #b4b19d;
+  transform: scale(1.2);
+  transition: all 1s;
 }
 
 .nav-img {
@@ -326,10 +328,11 @@ footer {
 .main-pc-consorcios h3 {
   text-align: left;
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+  margin: 0 0 1rem 1rem;
 }
 .main-pc-consorcios ul {
   text-align: left;
+  margin-left: 2rem;
 }
       /*MAIN SERVICIOS*/
 
@@ -396,6 +399,16 @@ iframe {
 
   .aside-div2 {
     margin-bottom: 3rem;
+  }
+
+  .img1:hover {
+    transform: scaleX(1.2);
+    margin-top: 1rem;
+    transition: all 1s;
+  }
+
+  .img2 {
+    border-radius: 1rem;
   }
 
   /*FOOTER PC*/
