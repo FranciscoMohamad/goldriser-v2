@@ -1,0 +1,68 @@
+@import "../abstracts/variables";
+.nav-pc {
+    display: none;
+}
+.nav-cel {
+    display: flex;
+    flex-direction: column;
+    .nav-logo {
+        width: 8rem;
+    }
+    .nav-item:hover {
+        background-color: $hover-color;
+    }
+    .nav-img {
+        height: 13rem;
+        width: 7rem;
+    }
+}
+.bg-skin {
+    background-color: $main-color;
+}
+nav{
+    ul{
+        li{
+            border: $border;
+            border-radius: 3px;
+            list-style: none;
+            display: inline-block;
+        }
+        li:hover {
+            background-color: $hover-color;
+            transform: scale(1.2);
+            transition: all 1s;
+        }
+    }
+}
+           /*NAV DE PC*/
+@media screen and (min-width:990px) {
+    .nav-cel {
+        display: none;
+    }
+
+    .nav-pc {
+        @include flex;
+        grid-area: nav;
+        background-image: $secondary-gradient;
+    }
+
+    nav{
+        img {
+            width: 10rem;
+            border: $border;
+            border-radius: 2px;
+            margin-top: 1rem;
+        }
+        ul {
+            @include flex;
+            width: 15rem;
+            li {
+                width: 10rem;
+                padding: 1rem 0 1rem;
+                text-align: center;
+                margin-top: 2rem;
+                background-color: $main-color;
+            }
+        }
+    } 
+}

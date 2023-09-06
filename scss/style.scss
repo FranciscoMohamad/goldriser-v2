@@ -1,0 +1,20 @@
+//ABSTRACTS
+@import "./abstracts/mixin";
+@import "./abstracts/extend";
+@import "./abstracts/variables";
+/*RESET*/
+@import "./base/resets";
+/*ESTILOS A GENERALES*/
+@import "./base/base";
+/*ESTRUCTURA GRID*/
+@import "./base/grid";
+/*HEADER*/
+@import "./layout/header";
+/*NAV*/
+@import "./layout/nav";
+/*MAIN*/
+@import "./layout/main";
+/*ASIDE*/
+@import "./layout/aside";
+/*FOOTER*/
+@import "./layout/footer";

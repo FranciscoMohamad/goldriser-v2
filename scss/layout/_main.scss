@@ -1,0 +1,161 @@
+.main-pc,.main-pc-consorcios,.main-pc-servicios {
+    display: none;
+}
+.main-cel {
+    @include flex;
+    text-align: center;
+    background-image: $secondary-gradient;
+    .iframe-cel {
+        margin-top: 0.5rem;
+        width: 90%;
+        height: 10rem;
+    }
+}
+
+main{
+    h1 {
+        @extend %styles;
+        display: inline-block;
+        margin: 2rem 1rem 1rem;
+        font-family: $font;
+        padding: 2px;
+        border: $border;  
+        border-radius: 7px;
+        text-align: center;
+    }
+}
+.main-text{
+    color: $main-color;
+}
+
+.accordion {
+    flex-wrap: nowrap;
+    margin: 1rem;
+    border-radius: 2px;
+    text-align: left;
+    .accordion-button {
+        border: $border;
+        background-color: $main-color;
+        &:hover{
+            @extend %hover;
+        }
+        &:not(.collapsed){
+            @extend %hover;
+            box-shadow: none;
+        }
+        &:focus{
+            border: $secondary-color;
+            box-shadow: none;
+        }
+    }
+}
+.btn {
+    color: $secondary-color;
+    border: $border;
+        &:active{
+            background-color: $secondary-color;
+    }
+        &:hover{
+            @extend %hover;
+            border: $border;
+    }
+}
+           /*MAIN PC*/
+@media screen and (min-width:990px) {    
+    .accordion {
+        display: none;
+    }
+    .main-cel {
+        background-image: $main-gradient;
+    }
+    
+    .main-pc {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .main-text {
+        color: $secondary-color;
+    }
+
+    main{
+          h1 {
+            margin: 2rem 0 2rem;
+        }
+    } 
+    main{
+        div{
+            h2{
+                margin: 0 0 1rem 1rem;
+                font-family: $font;
+                padding: 2px;
+                border: $border;
+                border-radius: 7px;
+                background-color: $main-color;
+                text-align: center;
+            }
+            p{
+                font-size: 1.2rem; 
+            }
+        }
+    }
+               /*MAIN CONSORCIOS*/
+
+    .main-pc-consorcios {
+        display: block;
+            h2{
+                display: inline-block;
+                margin: 1rem 0 2rem;
+        }
+            h3{
+                text-align: left;
+                font-size: 1.5rem;
+                margin: 0 0 1rem 1rem;
+        }
+            ul{
+                text-align: left;
+                margin-left: 2rem;
+        }
+    }
+               /*MAIN SERVICIOS*/
+
+    .main-pc-servicios {
+        display: block;
+            h2{
+                display: inline-block;
+                margin: 1rem 0 2rem;
+        }
+            ul{
+                text-align: left;
+        }
+    }
+    /*MAIN CONTACTO*/
+
+    .form-control {
+        border: $border;
+            &:focus{
+                box-shadow: none;
+                border: $border;
+        }
+    }
+        .btn {
+            color: $secondary-color;
+            border: $border;
+            &:active {
+                background-color: $secondary-color;
+        }
+            &:hover {
+                background-color: $hover-color;
+                color: $secondary-color;
+                border: $border;
+        }
+    }
+    .iframe-cel {
+        display: none;
+    }
+    iframe {
+        width: 100%;
+        height: 20rem;
+    }
+}
+    

@@ -1,0 +1,288 @@
+main h1 {
+  color: #000;
+  background-color: #E7E4CA; }
+
+.accordion .accordion-button:hover, .accordion .accordion-button:not(.collapsed), .btn:hover {
+  background-color: #cbc8b0;
+  color: #000; }
+
+/*RESET*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+/*ESTILOS A GENERALES*/
+html {
+  font-size: 62.5%;
+  font-size: 1rem; }
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: #000; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+@media screen and (min-width: 990px) {
+  p {
+    font-size: 1.2rem; } }
+
+/*ESTRUCTURA GRID*/
+#page {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-areas: "nav head" "nav  main" "foot  foot";
+  grid-template-rows: 110px 1fr 50px;
+  grid-template-columns: 1fr 3fr; }
+  #page header {
+    grid-area: head;
+    border-radius: 5px; }
+  #page .nav-cel {
+    grid-area: nav;
+    border-right: 0.02rem solid #000;
+    border-radius: 2px; }
+  #page main {
+    grid-area: main;
+    background-color: #E7E4CA; }
+  #page footer {
+    grid-area: foot;
+    border-top: 2px solid #000;
+    border-radius: 5px;
+    background-color: #E7E4CA; }
+
+/*ESTRUCTURA GRID PC*/
+@media screen and (min-width: 990px) {
+  #page {
+    grid-template-areas: " nav head aside" " nav  main aside" " foot  foot foot";
+    grid-template-rows: 150px 1fr 50px;
+    grid-template-columns: 2fr 4fr 2fr; } }
+
+/*HEADER*/
+header img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; }
+
+/*NAV*/
+.nav-pc {
+  display: none; }
+
+.nav-cel {
+  display: flex;
+  flex-direction: column; }
+  .nav-cel .nav-logo {
+    width: 8rem; }
+  .nav-cel .nav-item:hover {
+    background-color: #b4b19d; }
+  .nav-cel .nav-img {
+    height: 13rem;
+    width: 7rem; }
+
+.bg-skin {
+  background-color: #E7E4CA; }
+
+nav ul li {
+  border: 2px solid #000;
+  border-radius: 3px;
+  list-style: none;
+  display: inline-block; }
+
+nav ul li:hover {
+  background-color: #b4b19d;
+  transform: scale(1.2);
+  transition: all 1s; }
+
+/*NAV DE PC*/
+@media screen and (min-width: 990px) {
+  .nav-cel {
+    display: none; }
+  .nav-pc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: nav;
+    background-image: linear-gradient(#1a1919, #333131 20%); }
+  nav img {
+    width: 10rem;
+    border: 2px solid #000;
+    border-radius: 2px;
+    margin-top: 1rem; }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15rem; }
+    nav ul li {
+      width: 10rem;
+      padding: 1rem 0 1rem;
+      text-align: center;
+      margin-top: 2rem;
+      background-color: #E7E4CA; } }
+
+/*MAIN*/
+.main-pc, .main-pc-consorcios, .main-pc-servicios {
+  display: none; }
+
+.main-cel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(#1a1919, #333131 20%); }
+  .main-cel .iframe-cel {
+    margin-top: 0.5rem;
+    width: 90%;
+    height: 10rem; }
+
+main h1 {
+  display: inline-block;
+  margin: 2rem 1rem 1rem;
+  font-family: "Times New Roman", Times, serif;
+  padding: 2px;
+  border: 2px solid #000;
+  border-radius: 7px;
+  text-align: center; }
+
+.main-text {
+  color: #E7E4CA; }
+
+.accordion {
+  flex-wrap: nowrap;
+  margin: 1rem;
+  border-radius: 2px;
+  text-align: left; }
+  .accordion .accordion-button {
+    border: 2px solid #000;
+    background-color: #E7E4CA; }
+    .accordion .accordion-button:not(.collapsed) {
+      box-shadow: none; }
+    .accordion .accordion-button:focus {
+      border: #000;
+      box-shadow: none; }
+
+.btn {
+  color: #000;
+  border: 2px solid #000; }
+  .btn:active {
+    background-color: #000; }
+  .btn:hover {
+    border: 2px solid #000; }
+
+/*MAIN PC*/
+@media screen and (min-width: 990px) {
+  .accordion {
+    display: none; }
+  .main-cel {
+    background-image: linear-gradient(to top, #E7E4CA, #a8a695 95%); }
+  .main-pc {
+    display: flex;
+    flex-direction: column;
+    align-items: start; }
+  .main-text {
+    color: #000; }
+  main h1 {
+    margin: 2rem 0 2rem; }
+  main div h2 {
+    margin: 0 0 1rem 1rem;
+    font-family: "Times New Roman", Times, serif;
+    padding: 2px;
+    border: 2px solid #000;
+    border-radius: 7px;
+    background-color: #E7E4CA;
+    text-align: center; }
+  main div p {
+    font-size: 1.2rem; }
+  /*MAIN CONSORCIOS*/
+  .main-pc-consorcios {
+    display: block; }
+    .main-pc-consorcios h2 {
+      display: inline-block;
+      margin: 1rem 0 2rem; }
+    .main-pc-consorcios h3 {
+      text-align: left;
+      font-size: 1.5rem;
+      margin: 0 0 1rem 1rem; }
+    .main-pc-consorcios ul {
+      text-align: left;
+      margin-left: 2rem; }
+  /*MAIN SERVICIOS*/
+  .main-pc-servicios {
+    display: block; }
+    .main-pc-servicios h2 {
+      display: inline-block;
+      margin: 1rem 0 2rem; }
+    .main-pc-servicios ul {
+      text-align: left; }
+  /*MAIN CONTACTO*/
+  .form-control {
+    border: 2px solid #000; }
+    .form-control:focus {
+      box-shadow: none;
+      border: 2px solid #000; }
+  .btn {
+    color: #000;
+    border: 2px solid #000; }
+    .btn:active {
+      background-color: #000; }
+    .btn:hover {
+      background-color: #b4b19d;
+      color: #000;
+      border: 2px solid #000; }
+  .iframe-cel {
+    display: none; }
+  iframe {
+    width: 100%;
+    height: 20rem; } }
+
+/*ASIDE*/
+aside {
+  display: none; }
+  aside .aside-div2 {
+    color: #E7E4CA;
+    height: 35rem; }
+    aside .aside-div2 img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+
+/*ASIDE PC*/
+@media screen and (min-width: 990px) {
+  aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: aside;
+    background-image: linear-gradient(#1a1919, #333131 20%);
+    justify-content: space-between; }
+    aside div {
+      display: flex;
+      flex-direction: column;
+      width: 15rem; }
+    aside .aside-div1 {
+      margin-top: 1rem;
+      height: 7rem; }
+      aside .aside-div1 .img1:hover {
+        transform: scaleX(1.2);
+        margin-top: 1rem;
+        transition: all 1s; }
+    aside .aside-div2 {
+      margin-bottom: 3rem; }
+      aside .aside-div2 .img2 {
+        border-radius: 1rem; } }
+
+/*FOOTER*/
+footer {
+  text-align: center;
+  font-size: 10px; }
+
+/*FOOTER PC*/
+@media screen and (min-width: 990px) {
+  footer p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    display: inline-block; } }
