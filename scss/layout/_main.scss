@@ -26,6 +26,7 @@ main{
 }
 .main-text{
     color: $main-color;
+    margin: 0 1rem;
 }
 
 .accordion {
@@ -72,10 +73,11 @@ main{
     .main-pc {
         display: flex;
         flex-direction: column;
-        align-items: start;
+        align-items: center;
     }
     .main-text {
         color: $secondary-color;
+        margin: 0 2rem;
     }
 
     main{
@@ -86,7 +88,7 @@ main{
     main{
         div{
             h2{
-                margin: 0 0 1rem 1rem;
+                margin: 1rem 0 1rem 1rem;
                 font-family: $font;
                 padding: 2px;
                 border: $border;
@@ -95,7 +97,10 @@ main{
                 text-align: center;
             }
             p{
-                font-size: 1.2rem; 
+                font-size: 1.2rem;
+                margin: 0 1rem 0 1rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
             }
         }
     }
@@ -108,13 +113,15 @@ main{
                 margin: 1rem 0 2rem;
         }
             h3{
-                text-align: left;
+                text-align: center;
                 font-size: 1.5rem;
                 margin: 0 0 1rem 1rem;
         }
             ul{
-                text-align: left;
-                margin-left: 2rem;
+                display: block;
+                width: 90%;
+                text-align: start;
+                margin: 0 2rem;
         }
     }
                /*MAIN SERVICIOS*/
