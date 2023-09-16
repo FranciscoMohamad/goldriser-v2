@@ -15,24 +15,30 @@ aside {
         grid-area: aside;
         background-image: $secondary-gradient;
         justify-content: space-between;
-            div{
-                display: flex;
-                flex-direction: column;
-                width: 15rem;
+        div{
+            display: flex;
+            flex-direction: column;
+            width: 15rem;
+            margin-top: 1.2rem;
         }
-            .aside-div1 {
-                margin-top: 1rem;
-                height: 7rem;
-                .img1:hover {
-                    transform: scaleX(1.2);
-                    margin-top: 1rem;
-                    transition: all 1s;
+        .aside-div1 {
+            width: 14rem;
+            height: 6rem;
+            a{
+                .img1{
+                    @include contener;
+                }
+                &:hover {
+                        transform: scaleX(1.2);
+                        margin-top: 1rem;
+                        transition: all 1s;
+                }
             }
         }
-            .aside-div2 {
-                margin-bottom: 3rem;
-                .img2 {
-                    border-radius: 1rem;
+        .aside-div2 {
+            margin-bottom: 3rem;
+            .img2 {
+                border-radius: 1rem;
             }
         }
     }  

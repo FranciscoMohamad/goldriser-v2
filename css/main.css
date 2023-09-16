@@ -91,11 +91,13 @@ nav ul li {
   border-radius: 3px;
   list-style: none;
   display: inline-block; }
+  nav ul li a {
+    padding: 1rem 2rem; }
 
 nav ul li:hover {
   background-color: #b4b19d;
   transform: scale(1.2);
-  transition: all 1s; }
+  transition: all 0.5s; }
 
 /*NAV DE PC*/
 @media screen and (min-width: 990px) {
@@ -180,13 +182,21 @@ main h1 {
     display: none; }
   .main-cel {
     background-image: linear-gradient(to top, #E7E4CA, #a8a695 95%); }
+    .main-cel .div-form {
+      color: #000; }
   .main-pc {
     display: flex;
     flex-direction: column;
     align-items: center; }
+  .marco {
+    box-shadow: 5px 5px 15px #000;
+    width: 80%;
+    border: 2px solid #000;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem; }
   .main-text {
-    color: #000;
-    margin: 0 2rem; }
+    color: #000; }
   main h1 {
     margin: 2rem 0 2rem; }
   main div h2 {
@@ -269,11 +279,16 @@ aside {
     aside div {
       display: flex;
       flex-direction: column;
-      width: 15rem; }
+      width: 15rem;
+      margin-top: 1.2rem; }
     aside .aside-div1 {
-      margin-top: 1rem;
-      height: 7rem; }
-      aside .aside-div1 .img1:hover {
+      width: 14rem;
+      height: 6rem; }
+      aside .aside-div1 a .img1 {
+        height: 100%;
+        width: 100%;
+        object-fit: cover; }
+      aside .aside-div1 a:hover {
         transform: scaleX(1.2);
         margin-top: 1rem;
         transition: all 1s; }

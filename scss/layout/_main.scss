@@ -68,6 +68,9 @@ main{
     }
     .main-cel {
         background-image: $main-gradient;
+        .div-form{
+        color: $secondary-color;
+        }
     }
     
     .main-pc {
@@ -75,11 +78,17 @@ main{
         flex-direction: column;
         align-items: center;
     }
+    .marco{
+        box-shadow: 5px 5px 15px $secondary-color;
+        width: 80%;
+        border: $border;
+        margin: 1rem;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
     .main-text {
         color: $secondary-color;
-        margin: 0 2rem;
     }
-
     main{
           h1 {
             margin: 2rem 0 2rem;
