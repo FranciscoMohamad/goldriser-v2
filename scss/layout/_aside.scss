@@ -9,7 +9,7 @@ aside {
     }
 }
             /*ASIDE PC*/
-@media screen and (min-width:990px) {
+@media screen and (min-width:1024px) {
     aside {
         @include flex;
         grid-area: aside;
@@ -28,18 +28,13 @@ aside {
                 .img1{
                     @include contener;
                 }
-                &:hover {
-                        transform: scaleX(1.2);
-                        margin-top: 1rem;
-                        transition: all 1s;
-                }
             }
         }
+    }
         .aside-div2 {
             margin-bottom: 3rem;
             .img2 {
                 border-radius: 1rem;
             }
         }
-    }  
-}
+}  

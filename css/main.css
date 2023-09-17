@@ -18,7 +18,7 @@ html {
   font-size: 1rem; }
 
 body {
-  min-height: 100vh;
+  min-height: 100dvh;
   width: 100%;
   font-family: 'Poppins', sans-serif;
   color: #000; }
@@ -27,7 +27,7 @@ a {
   text-decoration: none;
   color: #000; }
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 1024px) {
   p {
     font-size: 1.2rem; } }
 
@@ -38,7 +38,7 @@ a {
   height: 100vh;
   grid-template-areas: "nav head" "nav  main" "foot  foot";
   grid-template-rows: 110px 1fr 50px;
-  grid-template-columns: 1fr 3fr; }
+  grid-template-columns: 130px 3fr; }
   #page header {
     grid-area: head;
     border-radius: 5px; }
@@ -56,7 +56,7 @@ a {
     background-color: #E7E4CA; }
 
 /*ESTRUCTURA GRID PC*/
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 1024px) {
   #page {
     grid-template-areas: " nav head aside" " nav  main aside" " foot  foot foot";
     grid-template-rows: 150px 1fr 50px;
@@ -100,7 +100,7 @@ nav ul li:hover {
   transition: all 0.5s; }
 
 /*NAV DE PC*/
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 1024px) {
   .nav-cel {
     display: none; }
   .nav-pc {
@@ -177,7 +177,7 @@ main h1 {
     border: 2px solid #000; }
 
 /*MAIN PC*/
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 1024px) {
   .accordion {
     display: none; }
   .main-cel {
@@ -268,7 +268,7 @@ aside {
       object-fit: cover; }
 
 /*ASIDE PC*/
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 1024px) {
   aside {
     display: flex;
     flex-direction: column;
@@ -288,14 +288,10 @@ aside {
         height: 100%;
         width: 100%;
         object-fit: cover; }
-      aside .aside-div1 a:hover {
-        transform: scaleX(1.2);
-        margin-top: 1rem;
-        transition: all 1s; }
-    aside .aside-div2 {
-      margin-bottom: 3rem; }
-      aside .aside-div2 .img2 {
-        border-radius: 1rem; } }
+  .aside-div2 {
+    margin-bottom: 3rem; }
+    .aside-div2 .img2 {
+      border-radius: 1rem; } }
 
 /*FOOTER*/
 footer {
@@ -303,7 +299,7 @@ footer {
   font-size: 10px; }
 
 /*FOOTER PC*/
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 1024px) {
   footer p {
     font-size: 1rem;
     margin-top: 0.5rem;
