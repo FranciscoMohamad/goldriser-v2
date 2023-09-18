@@ -16,12 +16,15 @@ main{
     h1 {
         @extend %styles;
         display: inline-block;
-        margin: 2rem 1rem 1rem;
+        margin: 1rem;
         font-family: $font;
-        padding: 2px;
+        font-size: 1.5rem;
         border: $border;  
         border-radius: 7px;
         text-align: center;
+    }
+    p {
+        font-size: 0.7rem;
     }
 }
 .main-text{

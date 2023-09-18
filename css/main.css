@@ -38,7 +38,7 @@ a {
   height: 100vh;
   grid-template-areas: "nav head" "nav  main" "foot  foot";
   grid-template-rows: 110px 1fr 50px;
-  grid-template-columns: 130px 3fr; }
+  grid-template-columns: 130px 1fr; }
   #page header {
     grid-area: head;
     border-radius: 5px; }
@@ -91,8 +91,6 @@ nav ul li {
   border-radius: 3px;
   list-style: none;
   display: inline-block; }
-  nav ul li a {
-    padding: 1rem 2rem; }
 
 nav ul li:hover {
   background-color: #b4b19d;
@@ -143,12 +141,15 @@ nav ul li:hover {
 
 main h1 {
   display: inline-block;
-  margin: 2rem 1rem 1rem;
+  margin: 1rem;
   font-family: "Times New Roman", Times, serif;
-  padding: 2px;
+  font-size: 1.5rem;
   border: 2px solid #000;
   border-radius: 7px;
   text-align: center; }
+
+main p {
+  font-size: 0.7rem; }
 
 .main-text {
   color: #E7E4CA;

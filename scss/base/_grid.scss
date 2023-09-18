@@ -7,7 +7,7 @@
     "nav  main"
     "foot  foot";
     grid-template-rows: 110px 1fr 50px;
-    grid-template-columns: 130px 3fr;
+    grid-template-columns: 130px 1fr;
     header {
         grid-area: head;
         border-radius: 5px;
