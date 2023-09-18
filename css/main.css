@@ -75,6 +75,10 @@ header img {
 .nav-cel {
   display: flex;
   flex-direction: column; }
+  .nav-cel .container-fluid {
+    position: sticky;
+    top: 0;
+    left: 0; }
   .nav-cel .nav-logo {
     width: 8rem; }
   .nav-cel .nav-item:hover {
@@ -299,7 +303,9 @@ aside {
 /*FOOTER*/
 footer {
   text-align: center;
-  font-size: 10px; }
+  font-size: 10px;
+  position: sticky;
+  bottom: 0; }
 
 /*FOOTER PC*/
 @media screen and (min-width: 1024px) {
