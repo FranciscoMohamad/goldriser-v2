@@ -1,40 +1,48 @@
 aside {
     display: none;
+
     .aside-div2 {
         color: $main-color;
         height: 35rem;
+
         img {
             @include contener;
         }
     }
 }
-            /*ASIDE PC*/
+
+/*ASIDE PC*/
 @media screen and (min-width:1024px) {
     aside {
         @include flex;
         grid-area: aside;
         background-image: $secondary-gradient;
         justify-content: space-between;
-        div{
+
+        div {
             display: flex;
             flex-direction: column;
             width: 15rem;
             margin-top: 1.2rem;
         }
+
         .aside-div1 {
             width: 14rem;
             height: 6rem;
-            a{
-                .img1{
+
+            a {
+                .img1 {
                     @include contener;
                 }
             }
         }
     }
-        .aside-div2 {
-            margin-bottom: 3rem;
-            .img2 {
-                border-radius: 1rem;
-            }
+
+    .aside-div2 {
+        margin-bottom: 3rem;
+
+        .img2 {
+            border-radius: 1rem;
         }
-}  
+    }
+}
