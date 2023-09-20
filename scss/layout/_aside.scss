@@ -54,7 +54,7 @@ aside {
 }
 
 /*ASIDE PC*/
-@media screen and (min-width:1366px) {
+@media screen and (min-width:1367px) {
     aside {
         @include flex;
         grid-area: aside;

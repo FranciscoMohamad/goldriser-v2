@@ -56,14 +56,14 @@ a {
     background-color: #E7E4CA; }
 
 /*ESTRUCTURA GRID LAPTOP*/
-@media screen and (min-width: 1024px) and (max-width: 1280px) {
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
   #page {
     grid-template-areas: " nav head aside" " nav  main aside" " foot  foot foot";
     grid-template-rows: 130px 1fr 50px;
     grid-template-columns: 2fr 4fr 2fr; } }
 
 /*ESTRUCTURA GRID PC*/
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1367px) {
   #page {
     grid-template-areas: " nav head aside" " nav  main aside" " foot  foot foot";
     grid-template-rows: 150px 1fr 50px;
@@ -141,7 +141,7 @@ nav ul li:hover {
         transition: all 0.5s; } }
 
 /*NAV DE PC*/
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1367px) {
   .nav-cel {
     display: none; }
   .nav-pc {
@@ -352,7 +352,7 @@ aside {
         height: 20rem; } }
 
 /*ASIDE PC*/
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1367px) {
   aside {
     display: flex;
     flex-direction: column;

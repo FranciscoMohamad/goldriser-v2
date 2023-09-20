@@ -34,7 +34,7 @@
 }
 
 /*ESTRUCTURA GRID LAPTOP*/
-@media screen and (min-width: 1024px) and (max-width:1280px) {
+@media screen and (min-width: 1024px) and (max-width:1366px) {
     #page {
         grid-template-areas: " nav head aside"
             " nav  main aside"
@@ -45,7 +45,7 @@
 }
 
 /*ESTRUCTURA GRID PC*/
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1367px) {
     #page {
         grid-template-areas: " nav head aside"
             " nav  main aside"
