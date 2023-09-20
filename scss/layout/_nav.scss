@@ -1,37 +1,46 @@
 @import "../abstracts/variables";
+
 .nav-pc {
     display: none;
 }
+
 .nav-cel {
     display: flex;
     flex-direction: column;
-    .container-fluid{
+
+    .container-fluid {
         position: sticky;
         top: 0;
         left: 0;
     }
+
     .nav-logo {
         width: 8rem;
     }
+
     .nav-item:hover {
         background-color: $hover-color;
     }
+
     .nav-img {
         height: 8rem;
         width: 6rem;
     }
 }
+
 .bg-skin {
     background-color: $main-color;
 }
-nav{
-    ul{
-        li{
+
+nav {
+    ul {
+        li {
             border: $border;
             border-radius: 3px;
             list-style: none;
             display: inline-block;
         }
+
         li:hover {
             background-color: $hover-color;
             transform: scale(1.2);
@@ -39,8 +48,9 @@ nav{
         }
     }
 }
-           /*NAV DE PC*/
-@media screen and (min-width:990px) {
+
+/*NAV DE LAPTOP*/
+@media screen and (min-width: 1024px) and (max-width:1280px) {
     .nav-cel {
         display: none;
     }
@@ -51,28 +61,69 @@ nav{
         background-image: $secondary-gradient;
     }
 
-    nav{
+    nav {
         ul {
             @include flex;
-            width: 15rem;
-            position: sticky;
-            top: 0;
+            @include sticky;
+
+            img {
+                width: 8rem;
+                border: $border;
+                margin-top: 1rem;
+                border-radius: 2px;
+            }
+
+            li {
+                width: 8rem;
+                padding: 0.5rem 0 0.5rem;
+                text-align: center;
+                margin-top: 0.5rem;
+                background-color: $main-color;
+                &:hover {
+                    background-color: $hover-color;
+                    transform: scale(1.2);
+                    transition: all 0.5s;
+                }
+            }
+        }
+    }
+}
+
+/*NAV DE PC*/
+@media screen and (min-width:1280px) {
+    .nav-cel {
+        display: none;
+    }
+
+    .nav-pc {
+        @include flex;
+        grid-area: nav;
+        background-image: $secondary-gradient;
+    }
+
+    nav {
+        ul {
+            @include flex;
+            @include sticky;
+
             img {
                 width: 10rem;
                 border: $border;
-                border-radius: 2px;
                 margin-top: 1rem;
+                border-radius: 2px;
             }
+
             li {
                 width: 10rem;
                 padding: 1rem 0 1rem;
-                text-align: center;
                 margin-top: 1rem;
+                text-align: center;
                 background-color: $main-color;
-                a{
+
+                a {
                     padding: 1rem 2rem;
                 }
             }
         }
-    } 
+    }
 }

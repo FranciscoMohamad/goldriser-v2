@@ -34,7 +34,7 @@
 }
 
 /*ESTRUCTURA GRID PC*/
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 1024px) {
     #page {
         grid-template-areas: " nav head aside"
             " nav  main aside"
