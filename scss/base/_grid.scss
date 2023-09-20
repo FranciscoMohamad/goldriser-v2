@@ -33,8 +33,19 @@
     }
 }
 
+/*ESTRUCTURA GRID LAPTOP*/
+@media screen and (min-width: 1024px) and (max-width:1280px) {
+    #page {
+        grid-template-areas: " nav head aside"
+            " nav  main aside"
+            " foot  foot foot";
+        grid-template-rows: 130px 1fr 50px;
+        grid-template-columns: 2fr 4fr 2fr;
+    }
+}
+
 /*ESTRUCTURA GRID PC*/
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1280px) {
     #page {
         grid-template-areas: " nav head aside"
             " nav  main aside"
