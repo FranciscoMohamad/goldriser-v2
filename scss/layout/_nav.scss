@@ -49,48 +49,8 @@ nav {
     }
 }
 
-/*NAV DE LAPTOP*/
-@media screen and (min-width: 1024px) and (max-width:1366px) {
-    .nav-cel {
-        display: none;
-    }
-
-    .nav-pc {
-        @include flex;
-        grid-area: nav;
-        background-image: $secondary-gradient;
-    }
-
-    nav {
-        ul {
-            @include flex;
-            @include sticky;
-
-            img {
-                width: 8rem;
-                border: $border;
-                margin-top: 1rem;
-                border-radius: 2px;
-            }
-
-            li {
-                width: 8rem;
-                padding: 0.5rem 0 0.5rem;
-                text-align: center;
-                margin-top: 0.5rem;
-                background-color: $main-color;
-                &:hover {
-                    background-color: $hover-color;
-                    transform: scale(1.2);
-                    transition: all 0.5s;
-                }
-            }
-        }
-    }
-}
-
 /*NAV DE PC*/
-@media screen and (min-width:1367px) {
+@media screen and (min-width:1024px) {
     .nav-cel {
         display: none;
     }
@@ -111,6 +71,9 @@ nav {
                 border: $border;
                 margin-top: 1rem;
                 border-radius: 2px;
+                @media screen and (min-width: 1024px) and (max-width:1366px){
+                    width: 8rem;
+                }     
             }
 
             li {
@@ -119,9 +82,17 @@ nav {
                 margin-top: 1rem;
                 text-align: center;
                 background-color: $main-color;
+                @media screen and (min-width: 1024px) and (max-width:1366px){
+                    width: 8rem;
+                    padding: 0.5rem 0 0.5rem;
+                    margin-top: 0.5rem;
+                }
 
                 a {
                     padding: 1rem 2rem;
+                    @media screen and (min-width: 1024px) and (max-width:1366px){
+                        padding: 0;
+                    }
                 }
             }
         }

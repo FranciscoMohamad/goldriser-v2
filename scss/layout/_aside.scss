@@ -11,50 +11,8 @@ aside {
     }
 }
 
-/*ASIDE LAPTOP*/
-@media screen and (min-width: 1024px) and (max-width:1366px) {
-    aside {
-        @include flex;
-        grid-area: aside;
-        background-image: $secondary-gradient;
-
-        .aside-div1 {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            @include sticky;
-            width: 10rem;
-            height: 32rem;
-            margin-bottom: 1rem;
-            color: $main-color;
-            text-align: center;
-
-            a {
-                margin-top: 1rem;
-
-                .img1 {
-                    @include contener;
-                }
-            }
-
-            .aside-div1-strong {
-                margin-top: 2rem;
-            }
-
-            p {
-                font-size: 1rem;
-            }
-
-            .img2 {
-                border-radius: 1rem;
-                height: 20rem;
-            }
-        }
-    }
-}
-
 /*ASIDE PC*/
-@media screen and (min-width:1367px) {
+@media screen and (min-width:1024px) {
     aside {
         @include flex;
         grid-area: aside;
@@ -70,6 +28,11 @@ aside {
             margin-bottom: 1rem;
             color: $main-color;
             text-align: center;
+
+            @media screen and (min-width: 1024px) and (max-width:1366px) {
+                width: 10rem;
+                height: 32rem;
+            }
 
             a {
                 margin-top: 1rem;
@@ -90,6 +53,10 @@ aside {
             .img2 {
                 border-radius: 1rem;
                 height: 30rem;
+
+                @media screen and (min-width: 1024px) and (max-width:1366px) {
+                    height: 20rem;
+                }
             }
         }
     }
