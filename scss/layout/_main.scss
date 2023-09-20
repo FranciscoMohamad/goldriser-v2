@@ -79,7 +79,7 @@ main {
 }
 
 /*MAIN PC*/
-@media screen and (min-width:1024px) {
+@media screen and (min-width:990px) {
     .accordion {
         display: none;
     }
@@ -112,12 +112,13 @@ main {
     }
 
     main {
+
         h1 {
             margin: 2rem 0 2rem;
+            font-size: 2.5rem;
+            padding: 0.5rem;
         }
-    }
 
-    main {
         div {
             h2 {
                 margin: 1rem 0 1rem 1rem;

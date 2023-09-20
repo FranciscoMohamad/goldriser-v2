@@ -1,19 +1,22 @@
 html {
-    font-size: 62.5%; 
+    font-size: 62.5%;
     font-size: 1rem;
 }
+
 body {
     min-height: 100dvh;
     width: 100%;
     font-family: 'Poppins', sans-serif;
     color: #000;
 }
+
 a {
     text-decoration: none;
     color: #000;
 }
-@media screen and (min-width:1024px) {
+
+@media screen and (min-width:990px) {
     p {
-       font-size: 1.2rem;
-  }
+        font-size: 1.2rem;
+    }
 }

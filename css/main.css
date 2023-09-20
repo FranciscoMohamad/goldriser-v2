@@ -27,7 +27,7 @@ a {
   text-decoration: none;
   color: #000; }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 990px) {
   p {
     font-size: 1.2rem; } }
 
@@ -56,7 +56,7 @@ a {
     background-color: #E7E4CA; }
 
 /*ESTRUCTURA GRID PC*/
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 990px) {
   #page {
     grid-template-areas: " nav head aside" " nav  main aside" " foot  foot foot";
     grid-template-rows: 150px 1fr 50px;
@@ -102,7 +102,7 @@ nav ul li:hover {
   transition: all 0.5s; }
 
 /*NAV DE PC*/
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 990px) {
   .nav-cel {
     display: none; }
   .nav-pc {
@@ -111,22 +111,26 @@ nav ul li:hover {
     align-items: center;
     grid-area: nav;
     background-image: linear-gradient(#1a1919, #333131 20%); }
-  nav img {
-    width: 10rem;
-    border: 2px solid #000;
-    border-radius: 2px;
-    margin-top: 1rem; }
   nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 15rem; }
+    width: 15rem;
+    position: sticky;
+    top: 0; }
+    nav ul img {
+      width: 10rem;
+      border: 2px solid #000;
+      border-radius: 2px;
+      margin-top: 1rem; }
     nav ul li {
       width: 10rem;
       padding: 1rem 0 1rem;
       text-align: center;
-      margin-top: 2rem;
-      background-color: #E7E4CA; } }
+      margin-top: 1rem;
+      background-color: #E7E4CA; }
+      nav ul li a {
+        padding: 1rem 2rem; } }
 
 /*MAIN*/
 .main-pc,
@@ -184,7 +188,7 @@ main p {
     border: 2px solid #000; }
 
 /*MAIN PC*/
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 990px) {
   .accordion {
     display: none; }
   .main-cel {
@@ -205,7 +209,9 @@ main p {
   .main-text {
     color: #000; }
   main h1 {
-    margin: 2rem 0 2rem; }
+    margin: 2rem 0 2rem;
+    font-size: 2.5rem;
+    padding: 0.5rem; }
   main div h2 {
     margin: 1rem 0 1rem 1rem;
     font-family: "Times New Roman", Times, serif;
@@ -275,30 +281,37 @@ aside {
       object-fit: cover; }
 
 /*ASIDE PC*/
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 990px) {
   aside {
     display: flex;
     flex-direction: column;
     align-items: center;
     grid-area: aside;
-    background-image: linear-gradient(#1a1919, #333131 20%);
-    justify-content: space-between; }
-    aside div {
+    background-image: linear-gradient(#1a1919, #333131 20%); }
+    aside .aside-div1 {
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
       width: 15rem;
-      margin-top: 1.2rem; }
-    aside .aside-div1 {
-      width: 14rem;
-      height: 6rem; }
-      aside .aside-div1 a .img1 {
-        height: 100%;
-        width: 100%;
-        object-fit: cover; }
-  .aside-div2 {
-    margin-bottom: 3rem; }
-    .aside-div2 .img2 {
-      border-radius: 1rem; } }
+      height: 43rem;
+      margin-bottom: 1rem;
+      color: #E7E4CA;
+      text-align: center; }
+      aside .aside-div1 a {
+        margin-top: 1rem; }
+        aside .aside-div1 a .img1 {
+          height: 100%;
+          width: 100%;
+          object-fit: cover; }
+      aside .aside-div1 .aside-div1-strong {
+        margin-top: 2rem; }
+      aside .aside-div1 p {
+        font-size: 1rem; }
+      aside .aside-div1 .img2 {
+        border-radius: 1rem;
+        height: 30rem; } }
 
 /*FOOTER*/
 footer {
@@ -308,7 +321,7 @@ footer {
   bottom: 0; }
 
 /*FOOTER PC*/
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 990px) {
   footer p {
     font-size: 1rem;
     margin-top: 0.5rem;

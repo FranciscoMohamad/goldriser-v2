@@ -12,37 +12,41 @@ aside {
 }
 
 /*ASIDE PC*/
-@media screen and (min-width:1024px) {
+@media screen and (min-width:990px) {
     aside {
         @include flex;
         grid-area: aside;
         background-image: $secondary-gradient;
-        justify-content: space-between;
-
-        div {
-            display: flex;
-            flex-direction: column;
-            width: 15rem;
-            margin-top: 1.2rem;
-        }
 
         .aside-div1 {
-            width: 14rem;
-            height: 6rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            width: 15rem;
+            height: 43rem;
+            margin-bottom: 1rem;
+            color: $main-color;
+            text-align: center;
 
             a {
+                margin-top: 1rem;
                 .img1 {
                     @include contener;
                 }
             }
-        }
-    }
+            .aside-div1-strong{
+                margin-top: 2rem;
+            }
+            p{
+                font-size: 1rem; 
+            }
 
-    .aside-div2 {
-        margin-bottom: 3rem;
-
-        .img2 {
-            border-radius: 1rem;
+            .img2 {
+                border-radius: 1rem;
+                height: 30rem;
+            }
         }
     }
 }
