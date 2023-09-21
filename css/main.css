@@ -184,13 +184,17 @@ main p {
 
 .main-text {
   color: #E7E4CA;
-  margin: 0 1rem; }
+  margin: 0 1rem;
+  padding: 0.5rem; }
 
 .accordion {
   flex-wrap: nowrap;
   margin: 1rem;
   border-radius: 2px;
   text-align: left; }
+  .accordion .accordion-li {
+    margin: 0.5rem 0;
+    font-size: 1rem; }
   .accordion .accordion-button {
     border: 2px solid #000;
     background-color: #E7E4CA; }
@@ -220,6 +224,10 @@ main p {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    .main-pc .main-pc-h2 {
+      margin-top: 0; }
+    .main-pc p {
+      padding: 0.5rem; }
   .marco {
     box-shadow: 5px 5px 15px #000;
     width: 80%;
@@ -281,6 +289,8 @@ main p {
       width: 90%;
       text-align: start;
       margin: 0 2rem; }
+      .main-pc-consorcios ul li {
+        padding-bottom: 1rem; }
   /*MAIN SERVICIOS*/
   .main-pc-servicios {
     display: block; }
@@ -289,6 +299,8 @@ main p {
       margin: 1rem 0 2rem; }
     .main-pc-servicios ul {
       text-align: left; }
+      .main-pc-servicios ul li {
+        padding-bottom: 0.5rem; }
   /*MAIN CONTACTO*/
   .form-control {
     border: 2px solid #000; }

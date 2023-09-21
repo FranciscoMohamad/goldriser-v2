@@ -36,6 +36,7 @@ main {
 .main-text {
     color: $main-color;
     margin: 0 1rem;
+    padding: 0.5rem;
 }
 
 .accordion {
@@ -43,6 +44,11 @@ main {
     margin: 1rem;
     border-radius: 2px;
     text-align: left;
+
+    .accordion-li {
+        margin: 0.5rem 0;
+        font-size: 1rem;
+    }
 
     .accordion-button {
         border: $border;
@@ -96,6 +102,12 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
+        .main-pc-h2{
+            margin-top: 0;
+        }
+        p{
+            padding: 0.5rem;
+        }
     }
 
     .marco {
@@ -109,7 +121,8 @@ main {
 
     .main-text {
         color: $secondary-color;
-        @media screen and (min-width: 1024px) and (max-width:1366px){
+
+        @media screen and (min-width: 1024px) and (max-width:1366px) {
             font-size: 1rem;
         }
     }
@@ -120,6 +133,7 @@ main {
             margin: 2rem 0 2rem;
             font-size: 2.5rem;
             padding: 0.5rem;
+
             @media screen and (min-width: 1024px) and (max-width:1366px) {
                 font-size: 1.5rem;
             }
@@ -134,6 +148,7 @@ main {
                 border-radius: 7px;
                 background-color: $main-color;
                 text-align: center;
+
                 @media screen and (min-width: 1024px) and (max-width:1366px) {
                     font-size: 1.5rem;
                 }
@@ -144,6 +159,7 @@ main {
                 margin: 0 1rem 0 1rem;
                 padding-left: 1rem;
                 padding-right: 1rem;
+
                 @media screen and (min-width: 1024px) and (max-width:1366px) {
                     font-size: 1.2rem;
                 }
@@ -172,6 +188,9 @@ main {
             width: 90%;
             text-align: start;
             margin: 0 2rem;
+            li{
+                padding-bottom: 1rem;
+            }
         }
     }
 
@@ -187,6 +206,9 @@ main {
 
         ul {
             text-align: left;
+            li{
+                padding-bottom: 0.5rem;
+            }
         }
     }
 
