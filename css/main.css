@@ -55,19 +55,15 @@ a {
     border-radius: 5px;
     background-color: #E7E4CA; }
 
-/*ESTRUCTURA GRID LAPTOP*/
-@media screen and (min-width: 1024px) and (max-width: 1366px) {
-  #page {
-    grid-template-areas: " nav head aside" " nav  main aside" " foot  foot foot";
-    grid-template-rows: 130px 1fr 50px;
-    grid-template-columns: 2fr 4fr 2fr; } }
-
 /*ESTRUCTURA GRID PC*/
-@media screen and (min-width: 1367px) {
+@media screen and (min-width: 990px) {
   #page {
     grid-template-areas: " nav head aside" " nav  main aside" " foot  foot foot";
     grid-template-rows: 150px 1fr 50px;
     grid-template-columns: 2fr 4fr 2fr; } }
+  @media screen and (min-width: 990px) and (min-width: 990px) and (max-width: 1366px) {
+    #page {
+      grid-template-rows: 130px 1fr 50px; } }
 
 /*HEADER*/
 header img {
@@ -109,7 +105,7 @@ nav ul li:hover {
   transition: all 0.5s; }
 
 /*NAV DE PC*/
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 990px) {
   .nav-cel {
     display: none; }
   .nav-pc {
@@ -129,27 +125,27 @@ nav ul li:hover {
       border: 2px solid #000;
       margin-top: 1rem;
       border-radius: 2px; } }
-    @media screen and (min-width: 1024px) and (min-width: 1024px) and (max-width: 1366px) {
+    @media screen and (min-width: 990px) and (min-width: 990px) and (max-width: 1366px) {
       nav ul img {
         width: 8rem; } }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 990px) {
     nav ul li {
       width: 10rem;
       padding: 1rem 0 1rem;
       margin-top: 1rem;
       text-align: center;
       background-color: #E7E4CA; } }
-    @media screen and (min-width: 1024px) and (min-width: 1024px) and (max-width: 1366px) {
+    @media screen and (min-width: 990px) and (min-width: 990px) and (max-width: 1366px) {
       nav ul li {
         width: 8rem;
         padding: 0.5rem 0 0.5rem;
         margin-top: 0.5rem; } }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 990px) {
       nav ul li a {
         padding: 1rem 2rem; } }
-      @media screen and (min-width: 1024px) and (min-width: 1024px) and (max-width: 1366px) {
+      @media screen and (min-width: 990px) and (min-width: 900px) and (max-width: 1366px) {
         nav ul li a {
           padding: 0; } }
 
@@ -166,7 +162,7 @@ nav ul li:hover {
   text-align: center;
   background-image: linear-gradient(#1a1919, #333131 20%); }
   .main-cel .iframe-cel {
-    margin-top: 0.5rem;
+    margin: 0.5rem 0;
     width: 90%;
     height: 10rem; }
 
@@ -213,11 +209,16 @@ main p {
     border: 2px solid #000; }
 
 /*MAIN PC*/
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 600px) {
   .accordion {
     display: none; }
   .main-cel {
-    background-image: linear-gradient(to top, #E7E4CA, #a8a695 95%); }
+    background-image: linear-gradient(to top, #E7E4CA, #a8a695 95%); } }
+  @media screen and (min-width: 600px) and (max-width: 989px) {
+    .main-cel {
+      background-image: linear-gradient(#1a1919, #333131 20%); } }
+
+@media screen and (min-width: 600px) {
     .main-cel .div-form {
       color: #000; }
   .main-pc {
@@ -227,7 +228,12 @@ main p {
     .main-pc .main-pc-h2 {
       margin-top: 0; }
     .main-pc p {
-      padding: 0.5rem; }
+      padding: 0.5rem; } }
+    @media screen and (min-width: 600px) and (max-width: 989px) {
+      .main-pc p {
+        color: #E7E4CA; } }
+
+@media screen and (min-width: 600px) {
   .marco {
     box-shadow: 5px 5px 15px #000;
     width: 80%;
@@ -237,20 +243,23 @@ main p {
     border-radius: 1rem; }
   .main-text {
     color: #000; } }
-  @media screen and (min-width: 1024px) and (min-width: 1024px) and (max-width: 1366px) {
+  @media screen and (min-width: 600px) and (max-width: 989px) {
+    .main-text {
+      color: #E7E4CA; } }
+  @media screen and (min-width: 600px) and (max-width: 1366px) {
     .main-text {
       font-size: 1rem; } }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 600px) {
   main h1 {
     margin: 2rem 0 2rem;
     font-size: 2.5rem;
     padding: 0.5rem; } }
-  @media screen and (min-width: 1024px) and (min-width: 1024px) and (max-width: 1366px) {
+  @media screen and (min-width: 600px) and (min-width: 990px) and (max-width: 1366px) {
     main h1 {
       font-size: 1.5rem; } }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 600px) {
   main div h2 {
     margin: 1rem 0 1rem 1rem;
     font-family: "Times New Roman", Times, serif;
@@ -259,21 +268,21 @@ main p {
     border-radius: 7px;
     background-color: #E7E4CA;
     text-align: center; } }
-  @media screen and (min-width: 1024px) and (min-width: 1024px) and (max-width: 1366px) {
+  @media screen and (min-width: 600px) and (min-width: 990px) and (max-width: 1366px) {
     main div h2 {
       font-size: 1.5rem; } }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 600px) {
   main div p {
     font-size: 1.2rem;
     margin: 0 1rem 0 1rem;
     padding-left: 1rem;
     padding-right: 1rem; } }
-  @media screen and (min-width: 1024px) and (min-width: 1024px) and (max-width: 1366px) {
+  @media screen and (min-width: 600px) and (min-width: 990px) and (max-width: 1366px) {
     main div p {
       font-size: 1.2rem; } }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 600px) {
   /*MAIN CONSORCIOS*/
   .main-pc-consorcios {
     display: block; }
@@ -283,14 +292,24 @@ main p {
     .main-pc-consorcios h3 {
       text-align: center;
       font-size: 1.5rem;
-      margin: 0 0 1rem 1rem; }
+      margin: 0 0 1rem 1rem; } }
+    @media screen and (min-width: 600px) and (max-width: 989px) {
+      .main-pc-consorcios h3 {
+        color: #E7E4CA; } }
+
+@media screen and (min-width: 600px) {
     .main-pc-consorcios ul {
       display: block;
       width: 90%;
       text-align: start;
       margin: 0 2rem; }
       .main-pc-consorcios ul li {
-        padding-bottom: 1rem; }
+        padding-bottom: 1rem; } }
+      @media screen and (min-width: 600px) and (max-width: 989px) {
+        .main-pc-consorcios ul li {
+          color: #E7E4CA; } }
+
+@media screen and (min-width: 600px) {
   /*MAIN SERVICIOS*/
   .main-pc-servicios {
     display: block; }
@@ -300,7 +319,12 @@ main p {
     .main-pc-servicios ul {
       text-align: left; }
       .main-pc-servicios ul li {
-        padding-bottom: 0.5rem; }
+        padding-bottom: 0.5rem; } }
+      @media screen and (min-width: 600px) and (max-width: 989px) {
+        .main-pc-servicios ul li {
+          color: #E7E4CA; } }
+
+@media screen and (min-width: 600px) {
   /*MAIN CONTACTO*/
   .form-control {
     border: 2px solid #000; }
@@ -317,7 +341,12 @@ main p {
       color: #000;
       border: 2px solid #000; }
   .iframe-cel {
-    display: none; }
+    display: none; } }
+  @media screen and (min-width: 600px) and (max-width: 989px) {
+    .iframe-cel {
+      display: block; } }
+
+@media screen and (min-width: 600px) {
   iframe {
     width: 100%;
     height: 20rem; } }
@@ -334,7 +363,7 @@ aside {
       object-fit: cover; }
 
 /*ASIDE PC*/
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 990px) {
   aside {
     display: flex;
     flex-direction: column;
@@ -352,12 +381,12 @@ aside {
       margin-bottom: 1rem;
       color: #E7E4CA;
       text-align: center; } }
-    @media screen and (min-width: 1024px) and (min-width: 1024px) and (max-width: 1366px) {
+    @media screen and (min-width: 990px) and (min-width: 990px) and (max-width: 1366px) {
       aside .aside-div1 {
         width: 10rem;
         height: 32rem; } }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 990px) {
       aside .aside-div1 a {
         margin-top: 1rem; }
         aside .aside-div1 a .img1 {
@@ -371,7 +400,7 @@ aside {
       aside .aside-div1 .img2 {
         border-radius: 1rem;
         height: 30rem; } }
-      @media screen and (min-width: 1024px) and (min-width: 1024px) and (max-width: 1366px) {
+      @media screen and (min-width: 990px) and (min-width: 990px) and (max-width: 1366px) {
         aside .aside-div1 .img2 {
           height: 20rem; } }
 
@@ -383,7 +412,7 @@ footer {
   bottom: 0; }
 
 /*FOOTER PC*/
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 600px) {
   footer p {
     font-size: 1rem;
     margin-top: 0.5rem;

@@ -12,7 +12,7 @@ aside {
 }
 
 /*ASIDE PC*/
-@media screen and (min-width:1024px) {
+@media screen and (min-width:990px) {
     aside {
         @include flex;
         grid-area: aside;
@@ -29,7 +29,7 @@ aside {
             color: $main-color;
             text-align: center;
 
-            @media screen and (min-width: 1024px) and (max-width:1366px) {
+            @media screen and (min-width: 990px) and (max-width:1366px) {
                 width: 10rem;
                 height: 32rem;
             }
@@ -54,7 +54,7 @@ aside {
                 border-radius: 1rem;
                 height: 30rem;
 
-                @media screen and (min-width: 1024px) and (max-width:1366px) {
+                @media screen and (min-width: 990px) and (max-width:1366px) {
                     height: 20rem;
                 }
             }
