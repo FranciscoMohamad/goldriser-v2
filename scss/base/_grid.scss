@@ -41,6 +41,7 @@
             " foot  foot foot";
         grid-template-rows: 150px 1fr 50px;
         grid-template-columns: 2fr 4fr 2fr;
+
         @media screen and (min-width: 990px) and (max-width:1366px) {
             grid-template-rows: 130px 1fr 50px;
         }

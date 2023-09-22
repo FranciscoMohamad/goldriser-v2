@@ -5,13 +5,10 @@
 }
 
 .nav-cel {
-    display: flex;
-    flex-direction: column;
+    @include flex;
 
     .container-fluid {
-        position: sticky;
-        top: 0;
-        left: 0;
+        @include sticky;
     }
 
     .nav-logo {
@@ -71,9 +68,10 @@ nav {
                 border: $border;
                 margin-top: 1rem;
                 border-radius: 2px;
-                @media screen and (min-width: 990px) and (max-width:1366px){
+
+                @media screen and (min-width: 990px) and (max-width:1366px) {
                     width: 8rem;
-                }     
+                }
             }
 
             li {
@@ -82,7 +80,8 @@ nav {
                 margin-top: 1rem;
                 text-align: center;
                 background-color: $main-color;
-                @media screen and (min-width: 990px) and (max-width:1366px){
+
+                @media screen and (min-width: 990px) and (max-width:1366px) {
                     width: 8rem;
                     padding: 0.5rem 0 0.5rem;
                     margin-top: 0.5rem;
@@ -90,7 +89,8 @@ nav {
 
                 a {
                     padding: 1rem 2rem;
-                    @media screen and (min-width: 900px) and (max-width:1366px){
+
+                    @media screen and (min-width: 900px) and (max-width:1366px) {
                         padding: 0;
                     }
                 }

@@ -77,11 +77,11 @@ header img {
 
 .nav-cel {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: center; }
   .nav-cel .container-fluid {
     position: sticky;
-    top: 0;
-    left: 0; }
+    top: 0; }
   .nav-cel .nav-logo {
     width: 8rem; }
   .nav-cel .nav-item:hover {
@@ -184,7 +184,6 @@ main p {
   padding: 0.5rem; }
 
 .accordion {
-  flex-wrap: nowrap;
   margin: 1rem;
   border-radius: 2px;
   text-align: left; }
@@ -322,7 +321,8 @@ main p {
         padding-bottom: 0.5rem; } }
       @media screen and (min-width: 600px) and (max-width: 989px) {
         .main-pc-servicios ul li {
-          color: #E7E4CA; } }
+          color: #E7E4CA;
+          margin-left: 1rem; } }
 
 @media screen and (min-width: 600px) {
   /*MAIN CONTACTO*/

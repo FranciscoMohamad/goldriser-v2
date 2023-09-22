@@ -40,7 +40,6 @@ main {
 }
 
 .accordion {
-    flex-wrap: nowrap;
     margin: 1rem;
     border-radius: 2px;
     text-align: left;
@@ -103,9 +102,7 @@ main {
     }
 
     .main-pc {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex;
 
         .main-pc-h2 {
             margin-top: 0;
@@ -113,7 +110,8 @@ main {
 
         p {
             padding: 0.5rem;
-            @media screen and (max-width: 989px){
+
+            @media screen and (max-width: 989px) {
                 color: $main-color;
             }
         }
@@ -194,7 +192,8 @@ main {
             text-align: center;
             font-size: 1.5rem;
             margin: 0 0 1rem 1rem;
-            @media screen and (max-width:989px){
+
+            @media screen and (max-width:989px) {
                 color: $main-color;
             }
         }
@@ -207,7 +206,8 @@ main {
 
             li {
                 padding-bottom: 1rem;
-                @media screen and (max-width:989px){
+
+                @media screen and (max-width:989px) {
                     color: $main-color;
                 }
             }
@@ -229,8 +229,10 @@ main {
 
             li {
                 padding-bottom: 0.5rem;
-                @media screen and (max-width:989px){
+
+                @media screen and (max-width:989px) {
                     color: $main-color;
+                    margin-left: 1rem;
                 }
             }
         }
@@ -264,7 +266,8 @@ main {
 
     .iframe-cel {
         display: none;
-        @media screen and (max-width:989px){
+
+        @media screen and (max-width:989px) {
             display: block;
         }
     }
