@@ -83,6 +83,15 @@ main {
     }
 }
 
+.form-control {
+    border: $border;
+
+    &:focus {
+        box-shadow: none;
+        border: $border;
+    }
+}
+
 /*MAIN PC*/
 @media screen and (min-width:600px) {
     .accordion {
@@ -239,15 +248,6 @@ main {
     }
 
     /*MAIN CONTACTO*/
-
-    .form-control {
-        border: $border;
-
-        &:focus {
-            box-shadow: none;
-            border: $border;
-        }
-    }
 
     .btn {
         color: $secondary-color;

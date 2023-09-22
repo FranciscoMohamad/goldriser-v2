@@ -207,6 +207,12 @@ main p {
   .btn:hover {
     border: 2px solid #000; }
 
+.form-control {
+  border: 2px solid #000; }
+  .form-control:focus {
+    box-shadow: none;
+    border: 2px solid #000; }
+
 /*MAIN PC*/
 @media screen and (min-width: 600px) {
   .accordion {
@@ -326,11 +332,6 @@ main p {
 
 @media screen and (min-width: 600px) {
   /*MAIN CONTACTO*/
-  .form-control {
-    border: 2px solid #000; }
-    .form-control:focus {
-      box-shadow: none;
-      border: 2px solid #000; }
   .btn {
     color: #000;
     border: 2px solid #000; }
